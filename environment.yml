@@ -1,0 +1,17 @@
+name: direct-3dgs
+channels:
+  - pytorch
+  - pytorch3d
+  - conda-forge
+  - defaults
+dependencies:
+  - plyfile
+  - python=3.7.13
+  - pytorch=1.12.1
+  - tqdm
+  - pytorch3d
+  - scipy
+  - shapely
+  - tensorboard
+  - scikit-learn
+  - trimesh
