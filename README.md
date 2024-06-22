@@ -103,5 +103,3 @@ python train_3dgs.py <MODELNET_PATH> --model pointnet2_sem_seg --log_dir <EXPERI
 ```
 
 The trained model and training logs will be saved in `log/sem_seg/<EXPERIMENT_NAME>`.
-
-

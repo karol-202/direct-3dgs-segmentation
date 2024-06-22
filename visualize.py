@@ -67,5 +67,5 @@ pred_val = seg_pred.contiguous().cpu().data.numpy()
 seg_pred = seg_pred.contiguous().view(-1, NUM_CLASSES)
 pred_val = np.argmax(pred_val, 2)[0, :]
 
-colored_model = composed_model.with_color_from_label(LABELS2COLORS).scaled(np.repeat(5, 3)).denormalized()
+colored_model = resampled_model.with_labels(pred_val).with_color_from_label(LABELS2COLORS).scaled(np.repeat(5, 3)).denormalized()
 colored_model.save_ply('/home/karol/rp/direct-3dgs/blender-scenes/scenes/visualization/point_cloud/iteration_15000/point_cloud.ply', include_normals=True)

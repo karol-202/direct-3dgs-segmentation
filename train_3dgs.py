@@ -116,7 +116,16 @@ def create_environment(args, train_paths, test_paths):
 
     num_point = args.npoint
     batch_size = args.batch_size
-    extra_features = [ExtraFeature.feature_by_name(feature_name) for feature_name in args.extra_features] if args.extra_features is not None else []
+
+    if args.extra_features is None:
+        extra_feature_names = []
+    elif type(args.extra_features) == list:
+        extra_feature_names = args.extra_features
+    elif type(args.extra_features) == str:
+        extra_feature_names = args.extra_features.split(',')
+    else:
+        raise ValueError(f'Unexpected extra_features type: {type(args.extra_features)}')
+    extra_features = [ExtraFeature.feature_by_name(feature_name) for feature_name in extra_feature_names]
     sampling = args.sampling
 
     print("start loading training data ...")
