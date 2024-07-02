@@ -1,6 +1,6 @@
 # Semantic 3D segmentation of 3D Gaussian Splats 
 
-This is the code repository for my bachelor thesis: _Semantic 3D segmentation of 3D Gaussian Splats: Assessing existing point cloud segmentation techniques on semantic segmentation of synthetic 3D Gaussian Splats scenes_.
+This is the code repository for my Bachelor thesis: _Semantic 3D segmentation of 3D Gaussian Splats: Assessing existing point cloud segmentation techniques on semantic segmentation of synthetic 3D Gaussian Splats scenes_.
 
 ## Paper abstract
 _[3D Gaussian Splatting (3DGS)](https://github.com/graphdeco-inria/gaussian-splatting) is a promising 3D reconstruction
@@ -14,7 +14,7 @@ for PointNet++ to process than point clouds sampled from mesh faces, possibly du
 However, as shown in the paper, inclusion of size, rotation and opacity of each splat allows PointNet++ to achieve
 nearly 87% of accuracy, outperforming PointNet++ on point clouds sampled from meshes._
 
-Link to the full paper: **coming soon**
+Link to the full paper: https://repository.tudelft.nl/record/uuid:387de885-1c53-4126-af25-19ebaa530a04
 
 ## Overview
 This repository contains:
